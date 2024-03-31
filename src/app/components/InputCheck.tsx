@@ -37,7 +37,8 @@ const InputCheck: React.FC<InputCheckProps> = ({ newcomers, database }) => {
             </div>
           }
         />
-        <Button onClick={handleSubmit} style={{ fontFamily: "Orbitron", fontWeight: 600 }}>Check Me!</Button>
+      <Button onClick={handleSubmit} style={{ fontFamily: "Orbitron", fontWeight: 600, backgroundColor: "blue" }}>Check Me!</Button>
+
       </div>
       {status ? <p className='ml-10 mt-2 sm:mt-4' style={{ fontSize: 'clamp(1.2rem, 2vw, 1.5rem)', fontFamily: "Orbitron" }}>{status}</p> : <p className='ml-10 mt-2 sm:mt-4' style={{ fontSize: 'clamp(1rem, 2vw, 1.2rem)', fontFamily: "Orbitron" }}>Please enter your Instagram username in the field above and click 'Check Me!' to get current status about your travel to Mars.</p>}
 
