@@ -2,7 +2,12 @@
 import React, { useState } from 'react';
 import { Input, Divider, Button, Link } from "@nextui-org/react";
 
-const InputCheck = ({ newcomers, database }) => {
+interface InputCheckProps {
+  newcomers: string[];
+  database: string[];
+}
+
+const InputCheck: React.FC<InputCheckProps> = ({ newcomers, database }) => {
   const [inputValue, setInputValue] = useState('');
   const [status, setStatus] = useState('');
 

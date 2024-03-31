@@ -1,15 +1,18 @@
 'use client'
 
+import React, { ReactNode } from 'react';
+import { NextUIProvider } from "@nextui-org/react";
 
-import {NextUIProvider} from "@nextui-org/react";
-
-import exp from "constants";
-
-
-export default function Providers({children}) {
-    return (
-        <NextUIProvider>
-            {children}
-        </NextUIProvider>
-    )
+interface ProvidersProps {
+  children: ReactNode;
 }
+
+const Providers: React.FC<ProvidersProps> = ({ children }) => {
+  return (
+    <NextUIProvider>
+      {children}
+    </NextUIProvider>
+  );
+};
+
+export default Providers;
