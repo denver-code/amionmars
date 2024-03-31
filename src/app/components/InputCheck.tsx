@@ -24,7 +24,7 @@ const InputCheck: React.FC<InputCheckProps> = ({ newcomers, database }) => {
   return (
     <div className="input-check flex justify-center flex-col m-auto h-screen">
       <p className='font-bold leading-10 sm:leading-7 sm:tracking-tight p-4 sm:p-10' style={{ fontSize: 'clamp(2rem, 5vw, 3rem)', fontFamily: "Orbitron", lineHeight: '1.5' }}>Check if you're coming to Mars!</p>
-      <Divider className='ml-10 mr-10' />
+      {/* <Divider className='ml-10 mr-10' /> */}
       <div className='columns-2 p-4 sm:p-10'>
         <Input
           className='max-w-sm'
